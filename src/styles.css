@@ -11,8 +11,10 @@
   cursor: pointer;
   height: 100px;
   border-radius: 10px;
-  filter: drop-shadow(0 0.5rem 0.75rem #102711);
+  filter: drop-shadow(0 0.5rem 0.75rem #404240);
   transition: all 0.3s ease;
+  font: 1.5em sans-serif;
+  font-weight: bold;
 }
 
 .button:hover {
@@ -24,8 +26,11 @@
 }
 
 #frame__url__loader {
-  width: 0;
-  height: 0;
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 10;
+  height: 10;
 }
 
 body {
@@ -35,11 +40,28 @@ body {
   grid-gap: 10px;
   height: calc(100vh - 5rem);
   overflow-y: auto;
+  background-color: black;
+  background-attachment: fill;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 10vw;
+  left: 25vh;
+  width: 100%;
+  height: 100%;
+  background-image: url("/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -10;
 }
 
 /* Remove scrollbar on the container but allow scrolling */
 body::-webkit-scrollbar {
   width: 0;
+  height: 0;
 }
 
 /* Remove scrollbar on the container but allow scrolling */
