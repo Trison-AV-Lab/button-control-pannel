@@ -25,10 +25,7 @@
   <Button
     title={action.name}
     onClick={() => {
-      let frame__to__load = document.getElementById("frame__url__loader");
-      if (frame__to__load) {
-        frame__to__load.src = `http://localhost:80/${action.url}`;
-      }
+      fetch(action.url, { method: "GET" });
     }}
   />
 {/each}
