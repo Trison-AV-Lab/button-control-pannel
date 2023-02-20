@@ -1,13 +1,23 @@
 <script>
   import Button from "../button.svelte";
   const actions = [
-    { name: "Video Bienvenida", url: "http://localhost:80/welcome.cgi" },
-    { name: "Video Corporativo", url: "http://localhost:80/corporate.cgi" },
-    { name: "Porsche Contenido", url: "http://localhost:80/porsche.cgi" },
-    { name: "VR", url: "http://localhost:80/vr.cgi" },
-    { name: "Porsche + VR", url: "http://localhost:80/porschevr.cgi" },
-    { name: "Power ON", url: "http://localhost:80/poweron.cgi" },
-    { name: "Power OFF", url: "http://localhost:80/poweroff.cgi" },
+    {
+      name: "Video Bienvenida",
+      url: "http://localhost:80/cgi-bin/welcome.cgi",
+    },
+    {
+      name: "Video Corporativo",
+      url: "http://localhost:80/cgi-bin/corporate.cgi",
+    },
+    {
+      name: "Porsche Contenido",
+      url: "http://localhost:80/cgi-bin/porsche.cgi",
+    },
+    { name: "VR", url: "http://localhost:80/cgi-bin/vr.cgi" },
+    { name: "Porsche + VR", url: "http://localhost:80/cgi-bin/porschevr.cgi" },
+    { name: "Power ON", url: "http://localhost:80/cgi-bin/poweron.cgi" },
+    { name: "Power OFF", url: "http://localhost:80/cgi-bin/poweroff.cgi" },
+    { name: "Background", url: "http://localhost:80/cgi-bin/background.cgi" },
   ];
 </script>
 
